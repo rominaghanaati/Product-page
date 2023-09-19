@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* max-width: 1200px; */
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    background: hsla(214, 92%, 47%, 1);
+    background: linear-gradient(90deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0968E5", endColorstr="#091970", GradientType=1 );
+}
+
+header h1 {
+    color: #f6f6f7;
+    font-family: 'Righteous', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 110px;
+}
+
+main {
+    position: absolute;
+    background-color: #f6f6f7;
+    top: 245px;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 35px; */
+}
+
+#search {
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+#search-ip {
+    background-color: #f6f6f7;
+    width: 40rem;
+    margin-top: 35px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: hsla(214, 92%, 47%, 1);
+    border-width: 5px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15),
+                -6px -6px 10px  -1px rgba(233, 233, 233, 0.7);
+    padding-left: 1rem;
+    outline: none;
+}
+
+#search-price {
+    background-color: #f6f6f7;
+    width: 300px;
+    margin-top: 40px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color:  hsla(231, 85%, 24%, 1);
+    border-bottom-width: 1px;
+    padding-left: 5px;
+    outline: none;
+}
+
+#search-button {
+    background-image: -webkit-linear-gradient(90deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;    
+    font-size: 15px;
+    font-weight: 10;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color:  hsla(214, 92%, 47%, 1);
+    border-bottom-width: 1px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    padding-bottom: 7px;
+}
+
+#search-button:hover {
+    background-image: linear-gradient(180deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);;
+}
+
+.filters {
+    margin: 25px;
+}
+
+.filter {
+    background-color: #808080b9;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-size: 27px;
+    /* font-weight: 900; */
+    margin: 20px;
+    cursor: pointer;
+}
+
+.filter:hover {
+    background-image: -webkit-linear-gradient(0deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    opacity: .8;
+}
+.selected {
+    background-image: -webkit-linear-gradient(180deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+img {
+    width: 200px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+#Products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    background-color: #fff;
+    width: 230px;
+    margin: 30px 0;
+    box-shadow: rgba(149, 157, 165, .2) 0px 8px 24px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 15px;
+    margin: auto;
+    margin: 30px;
+    align-items: center;
+}
+
+.product-item p {
+    color: grey;
+    margin: 10px 0 15px;
+    font-family: sans-serif;
+}
+
+.product-item span {
+    display: inline-block;
+    margin-bottom: 0px;
+    color: rgb(109, 109, 109);
+    padding: 5px 6px;
+    font-family: sans-serif;
+    background-color: #f6f6f7;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 6px -1px rgba(0, 0, 0, .15);
+}
+
+@media (max-width: 1000px) {
+    #search {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #products {
+        justify-content: center;
+    }
+
+    .product-item {
+        margin: 10px;
+    }
+}
